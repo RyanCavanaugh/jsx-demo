@@ -1,0 +1,8 @@
+{
+	"files": ["src/app.tsx", "typings/tsd.d.ts"],
+	"compilerOptions": {
+		"jsx": "react",
+		"outDir": "bin",
+		"module": "amd"
+	}
+}
