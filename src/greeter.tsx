@@ -1,7 +1,7 @@
 import React = require('react');
 
-interface GreeterProps extends React.Props<Greeter> {
-	whoToGreet: string;
+export interface GreeterProps extends React.Props<Greeter> {
+	whomToGreet: string;
 	greeting?: string|(() => string);
 }
 
@@ -16,6 +16,6 @@ export class Greeter extends React.Component<GreeterProps, {}> {
 			greeting = g();
 		}
 
-		return <div>{greeting}, {this.props.whoToGreet}</div>;
+		return <div>{greeting}, {this.props.whomToGreet}</div>;
 	}
 }

@@ -1,6 +1,6 @@
 import React = require('react');
 import $ = require('jquery');
-import {Greeter as Greetifier} from 'greeter';
+import {Greeter as Greetifier, GreeterProps as GreeterProps} from 'greeter';
 
 function getRandomGreeting() {
 	switch(Math.floor(Math.random() * 4)) {
@@ -12,6 +12,10 @@ function getRandomGreeting() {
 }
 
 $(() => {
-	React.render(<Greetifier whoToGreet='world' greeting={getRandomGreeting} />, $('#output').get(0));
+	let props: GreeterProps = {
+		whomToGreet: 'world',
+	};
+
+	React.render(<Greetifier {...props} />, $('#output').get(0));
 });
 
