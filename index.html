@@ -2,8 +2,11 @@
 <html lang="en">
   <head>
     <title>JSX and TypeScript</title>
-    <script src="node_modules/requirejs/require.js" data-main="bin/app"></script>
+    <script src="node_modules/requirejs/require.js"></script>
     <script src="require-config.js"></script>
+    <script>
+        require(["bin/app"]);
+    </script>
   </head>
   <body>
     <div id="output"></div>

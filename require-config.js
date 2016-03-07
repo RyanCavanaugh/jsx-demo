@@ -1,6 +1,6 @@
-requirejs.config({
+require.config({
 	paths: {
-	    react: ['/node_modules/react/dist/react'],
-	    jquery: ['/node_modules/jquery/dist/jquery']
+	    react: ['node_modules/react/dist/react'],
+	    jquery: ['node_modules/jquery/dist/jquery']
 	}
 });
